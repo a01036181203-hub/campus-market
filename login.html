@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>로그인</title>
+
+    <!-- 공통 CSS (헤더, 기본 구조) -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- 로그인 전용 CSS -->
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+
+<body class="login-page">
+
+<!-- 상단 네비게이션 -->
+<header class="header">
+    <div class="logo"><a href="index.html">대학끼리</a></div>
+
+    <nav class="nav">
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+        <a href="mypage.html">마이페이지</a>
+        <a href="chat.html" class="chat-btn">채팅</a>
+    </nav>
+</header>
+
+<!-- 로그인 메인 컨테이너 -->
+<section class="login-container">
+    <h2>로그인</h2>
+    <p class="login-desc">대학교끼리의 중고거래 플랫폼에 오신 것을 환영합니다</p>
+
+    <form>
+        <label>이메일 주소</label>
+        <input type="email" placeholder="이메일을 입력하세요" required />
+
+        <label>비밀번호</label>
+        <input type="password" placeholder="비밀번호를 입력하세요" required />
+
+        <div class="login-options">
+            <label class="keep-login">
+                <input type="checkbox" />
+                로그인 상태 유지
+            </label>
+            <a href="#" class="pw-find">비밀번호 찾기</a>
+        </div>
+
+        <button type="submit" class="login-btn">로그인</button>
+    </form>
+
+    <p class="signup-msg">계정이 없으신가요? <a href="#">회원가입</a></p>
+
+    <div class="social-login">
+        <button class="google">Google</button>
+        <button class="kakao">카카오</button>
+    </div>
+</section>
+
+<!-- 푸터 -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-section">
+            <h4>중고마켓</h4>
+            <p>안전하고 믿을 수 있는 중고거래 플랫폼입니다.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>빠른 링크</h4>
+            <p>상품 등록</p>
+            <p>공지사항</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>고객 지원</h4>
+            <p>문의하기</p>
+            <p>자주 묻는 질문</p>
+        </div>
+    </div>
+</footer>
+<script src="js/login.js"></script>
+<script src="js/header.js"></script>
+
+</body>
+</html>

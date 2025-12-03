@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>실시간 채팅</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body class="chat-page">
+
+<div class="chat-container">
+
+    <!-- 좌측 채팅방 목록 -->
+    <aside class="chat-list">
+        <h2>채팅</h2>
+
+        <div class="chat-item active">
+            <img src="img/user1.jpg" class="avatar">
+            <div class="chat-info">
+                <h4>홍길동</h4>
+                <p>네, 가능하신가요?</p>
+            </div>
+            <span class="time">오후 2:31</span>
+        </div>
+
+        <div class="chat-item">
+            <img src="img/user2.jpg" class="avatar">
+            <div class="chat-info">
+                <h4>박철수</h4>
+                <p>가격 네고 되나요?</p>
+            </div>
+            <span class="time">오후 1:05</span>
+        </div>
+    </aside>
+
+    <!-- 우측 채팅창 -->
+    <section class="chat-window">
+
+        <!-- 상단 채팅방 정보 -->
+        <div class="chat-header">
+            <img src="img/user1.jpg" class="avatar">
+            <div>
+                <h3>홍길동</h3>
+                <p class="status">온라인</p>
+            </div>
+        </div>
+
+        <!-- 메시지 목록 -->
+        <div class="messages">
+
+            <div class="msg other">
+                <p>안녕하세요! 상품 아직 있나요?</p>
+                <span class="msg-time">오후 2:29</span>
+            </div>
+
+            <div class="msg me">
+                <p>네, 아직 판매 중입니다!</p>
+                <span class="msg-time">오후 2:30</span>
+            </div>
+
+            <div class="msg other">
+                <p>오늘 거래 가능하신가요?</p>
+                <span class="msg-time">오후 2:31</span>
+            </div>
+
+        </div>
+
+        <!-- 메시지 입력창 -->
+        <div class="chat-input">
+            <input type="text" placeholder="메시지를 입력하세요...">
+            <button class="send-btn">전송</button>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

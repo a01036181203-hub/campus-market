@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>마이페이지</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mypage.css">
+</head>
+
+<body class="mypage-page">
+
+<!-- 공통 헤더 -->
+<header class="header">
+    <div class="logo"><a href="index.html">대학끼리</a></div>
+    <nav class="nav">
+        <a href="index.html">홈</a>
+        <a href="chat.html">채팅</a>
+        <a href="mypage.html">마이페이지</a>
+        <a href="login.html" class="chat-btn">로그인</a>
+    </nav>
+</header>
+
+<!-- ⭐ 여기가 핵심: 모든 콘텐츠를 감싸는 중앙 컨테이너 -->
+<div class="mypage-container">
+
+    <!-- 프로필 영역 -->
+    <section class="profile-card">
+        <div class="avatar">김</div>
+
+        <div class="profile-info">
+            <h2>김대학생</h2>
+            <p class="sub">서울대학교 · 컴퓨터공학과</p>
+            <p class="sub">가입일: 2023년 1월</p>
+        </div>
+
+        <div class="profile-stats">
+            <div>
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">평점</span>
+            </div>
+            <div>
+                <span class="stat-number">23</span>
+                <span class="stat-label">거래완료</span>
+            </div>
+            <div>
+                <span class="stat-number">156</span>
+                <span class="stat-label">신뢰도</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 탭 메뉴 -->
+    <section class="mypage-tabs">
+        <button class="tab active">거래내역</button>
+        <button class="tab">내가 올린 상품</button>
+        <button class="tab">구매상품</button>
+    </section>
+
+    <!-- 거래내역 리스트 -->
+    <section class="history-list">
+
+        <h3>거래내역</h3>
+
+        <div class="history-card">
+            <img src="img/sample1.jpg">
+            <div class="history-info">
+                <h4>아이폰 14 Pro 128GB 딥퍼플</h4>
+                <p class="price">950,000원</p>
+                <p class="meta">구매자: 홍길동 · 2024. 1. 15</p>
+            </div>
+            <span class="status done">거래완료</span>
+        </div>
+
+        <div class="history-card">
+            <img src="img/sample2.jpg">
+            <div class="history-info">
+                <h4>맥북 에어 M2 13인치 실버</h4>
+                <p class="price">1,200,000원</p>
+                <p class="meta">판매자: 김OO · 2024. 1. 10</p>
+            </div>
+            <span class="status bought">구매완료</span>
+        </div>
+
+    </section>
+
+</div> <!-- ⭐ mypage-container 끝 -->
+
+<script src="js/redirect.js"></script>
+<script>
+    requireLogin();
+</script>
+
+
+</body>
+</html>

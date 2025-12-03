@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대학끼리 중고거래</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 헤더 -->
+<header class="header">
+    <div class="logo"><a href="index.html">대학끼리</a></div>
+
+    <nav class="nav">
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+        <a href="mypage.html">마이페이지</a>
+        <a href="chat.html" class="chat-btn">채팅</a>
+    </nav>
+</header>
+
+
+    <!-- 히어로 영역 -->
+    <section class="hero">
+        <h1>원하는 중고 상품을 찾아보세요</h1>
+        <p>안전하고 믿을 수 있는 중고거래 플랫폼</p>
+    </section>
+
+    <!-- 검색창 -->
+    <section class="search-area">
+        <input type="text" placeholder="찾고 있는 상품을 검색해보세요..." class="search-input">
+        <button class="search-btn">🔍</button>
+    </section>
+
+    <!-- 카테고리 -->
+    <section class="categories">
+        <div class="category-item">
+            <div class="icon">📚</div>
+            <p>책</p>
+        </div>
+        <div class="category-item">
+            <div class="icon">💻</div>
+            <p>패드</p>
+        </div>
+        <div class="category-item">
+            <div class="icon">🖥️</div>
+            <p>노트북</p>
+        </div>
+        <div class="category-item">
+            <div class="icon">⋯</div>
+            <p>기타</p>
+        </div>
+    </section>
+
+    <!-- 인기 상품 -->
+    <section class="products">
+        <h2>인기 상품</h2>
+        <p class="sub">지금 가장 많은 관심을 받고 있는 상품들을 확인해보세요</p>
+
+        <div class="product-grid">
+
+            <!-- 상품 카드 예시 -->
+            <div class="product-card">
+                <img src="img/sample1.jpg" alt="">
+                <h3>아이패드 프로 11인치</h3>
+                <p class="price">650,000원</p>
+                <p class="meta">서울 광진구 · 2시간 전</p>
+                <button class="detail-btn">상세보기</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/sample2.jpg" alt="">
+                <h3>맥북 에어 M2</h3>
+                <p class="price">1,200,000원</p>
+                <p class="meta">서울 마포구 · 3시간 전</p>
+                <button class="detail-btn">상세보기</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/sample3.jpg" alt="">
+                <h3>전공책 세트</h3>
+                <p class="price">45,000원</p>
+                <p class="meta">서울 동작구 · 5시간 전</p>
+                <button class="detail-btn">상세보기</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/header.js"></script>
+</body>
+</html>
