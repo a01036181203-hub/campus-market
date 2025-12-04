@@ -20,7 +20,7 @@
     } else {
         nav.innerHTML = `
             <a href="login.html">로그인</a>
-            <a href="signup.html">회원가입</a>
+            <a href="sign.html">회원가입</a>
             <a href="mypage.html">마이페이지</a>
             <a href="chat.html" class="chat-btn">채팅</a>
         `;

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: #f5f7fb;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-box {
+  width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.register-title {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.register-desc {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 13px;
+  background: #2d6cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background: #1e54cc;
+}
+
+.login-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #2d6cff;
+  text-decoration: none;
+  font-weight: 600;
+}

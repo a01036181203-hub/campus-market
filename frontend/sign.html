@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/sign.css">
+</head>
+
+<body>
+  <div class="register-container">
+    
+    <div class="register-box">
+      <h2 class="register-title">회원가입</h2>
+      <p class="register-desc">대학교끼리 중고거래 플랫폼에 오신 것을 환영합니다</p>
+
+      <div class="input-group">
+        <label>이메일 주소</label>
+        <input type="email" id="email" placeholder="이메일을 입력하세요">
+      </div>
+
+      <div class="input-group">
+        <label>비밀번호</label>
+        <input type="password" id="password" placeholder="비밀번호를 입력하세요">
+      </div>
+
+      <div class="input-group">
+        <label>닉네임</label>
+        <input type="text" id="nickname" placeholder="닉네임을 입력하세요">
+      </div>
+
+      <div class="input-group">
+        <label>학교</label>
+        <select id="univ">
+          <option value="">학교를 선택하세요</option>
+          <option>동의대학교</option>
+          <option>부산대학교</option>
+          <option>경성대학교</option>
+          <option>동아대학교</option>
+        </select>
+      </div>
+
+      <button class="register-btn" onclick="register()">회원가입</button>
+
+      <p class="login-link">이미 계정이 있으신가요? 
+        <a href="login.html">로그인</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="js/sign.js"></script>
+</body>
+</html>

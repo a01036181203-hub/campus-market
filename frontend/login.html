@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <title>로그인</title>
 
-    <!-- 공통 CSS (헤더, 기본 구조) -->
+    <!-- 공통 CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- 로그인 전용 CSS -->
     <link rel="stylesheet" href="css/login.css" />
 </head>
-
 
 <body class="login-page">
 
@@ -20,7 +19,7 @@
 
     <nav class="nav">
         <a href="login.html">로그인</a>
-        <a href="signup.html">회원가입</a>
+        <a href="sign.html">회원가입</a>
         <a href="mypage.html">마이페이지</a>
         <a href="chat.html" class="chat-btn">채팅</a>
     </nav>
@@ -31,12 +30,16 @@
     <h2>로그인</h2>
     <p class="login-desc">대학교끼리의 중고거래 플랫폼에 오신 것을 환영합니다</p>
 
-    <form>
+    <!-- ★ form 새로고침 방지 -->
+    <form onsubmit="return false;">
+
         <label>이메일 주소</label>
-        <input type="email" placeholder="이메일을 입력하세요" required />
+        <!-- ★ id 추가 -->
+        <input id="loginEmail" type="email" placeholder="이메일을 입력하세요" required />
 
         <label>비밀번호</label>
-        <input type="password" placeholder="비밀번호를 입력하세요" required />
+        <!-- ★ id 추가 -->
+        <input id="loginPassword" type="password" placeholder="비밀번호를 입력하세요" required />
 
         <div class="login-options">
             <label class="keep-login">
@@ -46,10 +49,11 @@
             <a href="#" class="pw-find">비밀번호 찾기</a>
         </div>
 
-        <button type="submit" class="login-btn">로그인</button>
+        <!-- ★ type="button" + onclick=login() 필수 -->
+        <button type="button" class="login-btn" onclick="login()">로그인</button>
     </form>
 
-    <p class="signup-msg">계정이 없으신가요? <a href="#">회원가입</a></p>
+    <p class="signup-msg">계정이 없으신가요? <a href="sign.html">회원가입</a></p>
 
     <div class="social-login">
         <button class="google">Google</button>
@@ -78,6 +82,8 @@
         </div>
     </div>
 </footer>
+
+<!-- ★ login.js가 반드시 아래 있어야 함 -->
 <script src="js/login.js"></script>
 <script src="js/header.js"></script>
 
